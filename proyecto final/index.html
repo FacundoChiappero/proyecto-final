@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facundo Chiappero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+        <h1>AEROLINEAS PROA</h1>
+    </header>
+
+    <nav>
+        <a href=""><b>AEROLINEAS RELACIONADAS</b></a>
+        <a href=""><b>SOBRE NOSOTROS</b></a>
+        <a href=""><b>VUELOS DISPONIBLES</b></a>
+    </nav>
+
+    <section>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Pasaje para:</td>
+                    <td><input type="radio" name="tipoPasaje" name="tipoPasaje" id="tipoPasajeIda" required> ida</td>
+                    <td><input type="radio" name="tipoPasaje" name="tipoPasaje" id="tipoPasajeIdaVuelta" required> ida y vuelta</td>
+                </tr>
+                <tr>
+                    <td><label for="desde">Desde:</label></td>
+                    <td> <input type="text" name="desde" id="desde" required placeholder="origen"> </td>
+                    <td><label for="hasta">Hasta:</label></td>
+                    <td> <input type="text" name="hasta" id="hasta" required placeholder="destino"> </td>
+
+                </tr>
+                <tr>
+                    <td><label for="salida">Fecha de salida:</label></td>
+                    <td><input type="date" name="salida" id="salida" required></td>
+                    <td><label for="vuelta">Fecha de vuelta:</label></td>
+                    <td><input type="date" name="vuelta" id="vuelta" required></td>
+                </tr>
+                <tr>
+                    <td><label for="horaSalida">Hora de salida:</label></td>
+                    <td><input type="time" name="horaSalida" id="horaSalida" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cantPersonas">Cantidad de personas:</label></td>
+                    <td><input type="number" name="cantPersonas" id="cantPersonas" required placeholder="cantidad de personas"></td>
+                </tr>
+                <tr>
+                    <td><label for="clase">Clase en la que viaja:</label></td>
+                    <td>
+                        <select name="clase" id="clase">
+                            <option value="economica">economica</option>
+                            <option value="primera clase">primera clase</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dni">DNI:</label></td>
+                    <td><input type="number" name="dni" id="dni" required placeholder="no ponga puntos"></td>
+                </tr>
+                <tr>
+                    <td><label for="gmail">Gmail:</label></td>
+                    <td> <input type="email" name="gmail" id="gmail" required placeholder="ejemplo@gmail.com"> </td>
+                </tr>
+                <tr>
+                    <td><label for="tarjeta">Numero de tarjeta:</label></td>
+                    <td> <input type="number" name="tarjeta" id="tarjeta" required placeholder="su tarjeta"> </td>
+                </tr>
+                <tr>
+                    <td><label for="color">Elige el color de la funda de tu almohada:</label></td>
+                    <td><input type="color" id="color" name="color" value="#000000"></abbr></td>
+                </tr>
+                <tr><td><input type="submit" value="Enviar" id="submitBtn"></td></tr>
+
+            </table>
+        </form>
+    </section>
+
+ 
+
+    <table id="tabla">
+        <thead>
+        <tr>
+            <th>lugar de salida</th>
+            <th>lugar de llegada</th>
+            <th>fecha de salida</th>
+            <th>fecha de vuelta</th>
+            <th>hora de salida</th>
+            <th>cantidad de personas</th>
+            <th>clase en la que viaje</th>
+            <th>dni</th>
+            <th>gmail</th>
+            <th>tarjeta</th>
+            <th>color en codigo hexadecimal</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    </table>
+
+    <footer>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z"></path><path fill="#f5f5f5" d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z"></path><path fill="#e84f4b" d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z"></path>
+                </svg>
+            <b>: aerolineasProa@gmail.com</b></p>
+        <div>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                </svg><b>: aerolineasProa</b></p>
+            </div>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+            <path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path>
+            </svg><b>: aerolineasProa</b></p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
